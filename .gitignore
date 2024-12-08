@@ -2,9 +2,7 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-.env
-*.log
-*.db
+
 
 ### Eclipse ###
 .apt_generated
