@@ -69,7 +69,7 @@ public class DeleteBook extends JFrame {
             return;
         }
 
-        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library_management", "root", "JA08@jaya")) {
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library_management", "root", "root123")) {
             // Query to delete the book based on ISBN
             String query = "DELETE FROM books WHERE isbn = ?";
             try (PreparedStatement stmt = conn.prepareStatement(query)) {
