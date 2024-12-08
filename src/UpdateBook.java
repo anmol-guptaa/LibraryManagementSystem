@@ -107,7 +107,7 @@ public class UpdateBook extends JFrame {
             return;
         }
 
-        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library_management", "root", "JA08@jaya")) {
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library_management", "root", "root123")) {
             String query = "SELECT title, author, publisher FROM books WHERE isbn = ?";
             try (PreparedStatement stmt = conn.prepareStatement(query)) {
                 stmt.setString(1, isbn);
@@ -142,7 +142,7 @@ public class UpdateBook extends JFrame {
             return;
         }
 
-        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library_management", "root", "JA08@jaya")) {
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/library_management", "root", "root123")) {
             // Update query using the correct column order
             String query = "UPDATE books SET title = ?, author = ?, publisher = ? WHERE isbn = ?";
             try (PreparedStatement stmt = conn.prepareStatement(query)) {
