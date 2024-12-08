@@ -5,9 +5,9 @@ import java.sql.SQLException;
 public class Config {
     public static void main(String[]args) throws ClassNotFoundException{
 
-        String url ="jdbc:mysql://localhost:3306/library_management";
-        String username ="root";
-        String password ="JA08@jaya";
+        String url =System.getenv("jdbc:mysql://localhost:3306/library_management");
+        String username =System.getenv("root");
+        String password =System.getenv("JA08@jaya");
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");

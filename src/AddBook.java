@@ -17,9 +17,9 @@ public class AddBook extends JFrame {
         setUndecorated(true); // Remove default title bar
 
         // Set the background image
-        ImageIcon backgroundImage = new ImageIcon("src/ions/123456.png"); // Replace with your image path
+        ImageIcon backgroundImage = new ImageIcon("src/ions/123456.png");
         backgroundLabel = new JLabel(backgroundImage);
-        backgroundLabel.setLayout(new GridBagLayout()); // Center components
+        backgroundLabel.setLayout(new GridBagLayout());
         add(backgroundLabel);
 
         // Panel setup
@@ -100,7 +100,7 @@ public class AddBook extends JFrame {
 
         try {
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/library_management", "root", "JA08@jaya"); // Replace with your DB credentials
+                    "jdbc:mysql://localhost:3306/library_management", "root", "JA08@jaya");
             String query = "INSERT INTO books ( title, author,isbn, publisher) VALUES (?, ?, ?, ?)";
             PreparedStatement stmt = conn.prepareStatement(query);
             stmt.setString(1, title);

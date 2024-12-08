@@ -20,7 +20,7 @@ public class SearchBook extends JFrame {
         // Set the background image
         ImageIcon backgroundImage = new ImageIcon("src/ions/123456.png");
         backgroundLabel = new JLabel(backgroundImage);
-        backgroundLabel.setLayout(new GridBagLayout()); // Center components
+        backgroundLabel.setLayout(new GridBagLayout());
         add(backgroundLabel);
 
         // Panel setup
@@ -92,7 +92,7 @@ public class SearchBook extends JFrame {
 
         // Button Listeners
         searchButton.addActionListener(e -> searchBook());
-        exitButton.addActionListener(e -> {dispose();}); // Close the application
+        exitButton.addActionListener(e -> {dispose();});
     }
 
     private void searchBook() {
@@ -105,7 +105,7 @@ public class SearchBook extends JFrame {
 
         try {
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/library_management", "root", "JA08@jaya"); // Replace with DB credentials
+                    "jdbc:mysql://localhost:3306/library_management", "root", "JA08@jaya");
             String query = "SELECT title, author, publisher FROM books WHERE isbn = ?";
             PreparedStatement stmt = conn.prepareStatement(query);
             stmt.setString(1, isbn);

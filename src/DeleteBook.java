@@ -13,13 +13,13 @@ public class DeleteBook extends JFrame {
         setTitle("Delete Book");
         setSize(700, 450);
         setLocationRelativeTo(null);
-        setUndecorated(true); // Remove default close/minimize buttons
+        setUndecorated(true);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         // Set the background image
-        ImageIcon backgroundImage = new ImageIcon("src/ions/123456.png"); // Replace with your image path
+        ImageIcon backgroundImage = new ImageIcon("src/ions/123456.png");
         backgroundLabel = new JLabel(backgroundImage);
-        backgroundLabel.setLayout(new GridBagLayout()); // Center components
+        backgroundLabel.setLayout(new GridBagLayout());
         add(backgroundLabel);
 
         // Panel setup

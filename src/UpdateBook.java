@@ -16,8 +16,8 @@ public class UpdateBook extends JFrame {
         setUndecorated(true);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        // Set the background image
-        ImageIcon backgroundImage = new ImageIcon("src/ions/123456.png"); // Replace with your image path
+        // Background image
+        ImageIcon backgroundImage = new ImageIcon("src/ions/123456.png");
         backgroundLabel = new JLabel(backgroundImage);
         backgroundLabel.setLayout(new GridBagLayout()); // Center components
         add(backgroundLabel);

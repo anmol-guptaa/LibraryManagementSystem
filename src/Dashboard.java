@@ -11,7 +11,7 @@ public class Dashboard extends JPanel {
 
         // Add background image
         JLabel background = new JLabel(new ImageIcon("src/ions/Library_Book_532388_1366x768.jpg"));
-        background.setBounds(0, 0, 1366, 766); // Adjust size based on your frame
+        background.setBounds(0, 0, 1366, 766);
         add(background);
         background.setLayout(null);
 
@@ -55,11 +55,11 @@ public class Dashboard extends JPanel {
 
     private JButton createButton(String text) {
         JButton button = new JButton(text);
-        button.setFont(new Font("Arial", Font.BOLD, 16)); // Adjust font size
+        button.setFont(new Font("Arial", Font.BOLD, 16));
         button.setBackground(Color.WHITE); // White background
         button.setForeground(Color.BLACK); // Black text
         button.setFocusPainted(false);
-        button.setBorder(BorderFactory.createLineBorder(Color.GRAY)); // Add border
+        button.setBorder(BorderFactory.createLineBorder(Color.GRAY));
         return button;
     }
 

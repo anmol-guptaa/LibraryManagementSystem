@@ -87,7 +87,6 @@ public class Login extends JFrame {
         });
     }
 
-    // Validate login credentials
     private boolean validateLogin(String username, String password) {
         try {
             Connection conn = DriverManager.getConnection(
