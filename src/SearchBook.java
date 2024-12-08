@@ -105,7 +105,7 @@ public class SearchBook extends JFrame {
 
         try {
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/library_management", "root", "JA08@jaya");
+                    "jdbc:mysql://localhost:3306/library_management", "root", "root123");
             String query = "SELECT title, author, publisher FROM books WHERE isbn = ?";
             PreparedStatement stmt = conn.prepareStatement(query);
             stmt.setString(1, isbn);
