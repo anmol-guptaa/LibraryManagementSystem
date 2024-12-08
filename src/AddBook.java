@@ -100,7 +100,7 @@ public class AddBook extends JFrame {
 
         try {
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/library_management", "root", "JA08@jaya");
+                    "jdbc:mysql://localhost:3306/library_management", "root", "root123");
             String query = "INSERT INTO books ( title, author,isbn, publisher) VALUES (?, ?, ?, ?)";
             PreparedStatement stmt = conn.prepareStatement(query);
             stmt.setString(1, title);
