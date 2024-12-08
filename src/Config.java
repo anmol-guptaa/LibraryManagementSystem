@@ -7,7 +7,7 @@ public class Config {
 
         String url ="jdbc:mysql://localhost:3306/library_management";
         String username ="root";
-        String password ="JA08@jaya";
+        String password ="root123";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
