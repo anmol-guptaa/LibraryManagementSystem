@@ -90,7 +90,7 @@ public class Login extends JFrame {
     private boolean validateLogin(String username, String password) {
         try {
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/library_management", "root", "JA08@jaya");
+                    "jdbc:mysql://localhost:3306/library_management", "root", "root123");
             String query = "SELECT * FROM users WHERE username = ? AND password = ?";
             PreparedStatement stmt = conn.prepareStatement(query);
             stmt.setString(1, username);
