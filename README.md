@@ -1,10 +1,10 @@
-#Library Management System
+# Library Management System
 
 Description
 
 This Library Management System is a Java-based application designed to manage books in a library. It allows users to add, update, delete, and search for books. The system provides an easy-to-use interface for managing books with essential functionalities.
 
-#Features
+## Features
 
 Add Book: Allows the addition of new books to the library database.
 
@@ -17,7 +17,7 @@ Search Book: Provides a search functionality to find books by title, author, or 
 User Authentication: Secure login and logout functionality for users.
 
 
-#Technologies Used
+## Technologies Used
 
 Java: Programming language used to develop the application.
 
@@ -29,7 +29,7 @@ Swing: Used to create the graphical user interface (GUI).
 
 
 
-#How It Works
+## How It Works
 
 The system provides a simple interface where users can perform operations like adding, updating, deleting, and searching books.
 
